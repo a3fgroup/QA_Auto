@@ -1,7 +1,5 @@
-import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
 
 browser = webdriver.Firefox()
 browser.get('http://youtube.com')
@@ -27,10 +25,3 @@ html = browser.find_element_by_tag_name('html')
 
 for i in range(10):
     html.send_keys(Keys.DOWN)
-
-
-
-
-
-
-# /html/body/ytd-app/div/div/ytd-masthead/div[3]/div[3]/div[2]/ytd-button-renderer/a/paper-button/yt-formatted-string
